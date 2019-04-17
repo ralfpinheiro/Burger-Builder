@@ -8,6 +8,7 @@
     "react-scripts": "2.1.8"
   },
   "scripts": {
+    "start-poll": "CHOKIDAR_USEPOLLING=true react-scripts start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
