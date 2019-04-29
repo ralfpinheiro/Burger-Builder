@@ -1,5 +1,6 @@
 import React from 'react';
 import './Order.css';
+import Orders from '../../containers/Orders/Orders';
 
 const order = props => (
   <div className='Order'>
@@ -9,3 +10,5 @@ const order = props => (
     </p>
   </div>
 );
+
+export default order;
