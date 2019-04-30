@@ -1,0 +1,26 @@
+.Input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.Label {
+  font-weight: normal;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.InputElement {
+  width: 80%;
+  outline: none;
+  border: 1px solid #eaeaea;
+  background-color: #fff;
+  font: inherit;
+  padding: 8px 10px;
+  box-sizing: border-box;
+}
+
+.InputElement:focus {
+  outline: none;
+  background-color: #f3f3f3;
+}
