@@ -1,6 +1,6 @@
 import React from 'react';
 import './Order.css';
-import Orders from '../../containers/Orders/Orders';
+// import Orders from '../../containers/Orders/Orders';
 
 const order = props => {
   const ingredients = [];
