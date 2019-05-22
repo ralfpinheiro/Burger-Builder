@@ -5,25 +5,17 @@ import BuildControls from '../../components/Burger/BuildControls/BuildControls';
 import Aux from '../..//hoc/Aux/Aux';
 import Modal from '../../components/UI/Modal/Modal';
 import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary';
-import axios from '../../axios-orders';
 import Spinner from '../../components/UI/Spinner/Spinner';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 import * as burgerBuilderActions from '../../store/actions/index';
+import axios from '../../axios-orders';
 
 class BurgerBuilder extends Component {
   state = {
-    purchasing: false,
-    loading: false,
-    error: false
+    purchasing: false
   };
 
-  componentDidMount() {
-    // axios.get('https://react-my-burger-680c4.firebaseio.com/ingredients.json').then(response => {
-    //   this.setState({
-    //     ingredients: response.data
-    //   });
-    // });
-  }
+  componentDidMount() {}
 
   updatePurchaseState(ingredients) {
     const sum = Object.keys(ingredients)
@@ -86,10 +78,6 @@ class BurgerBuilder extends Component {
           ingredients={this.props.ings}
         />
       );
-    }
-
-    if (this.state.loading) {
-      orderSummary = <Spinner />;
     }
 
     return (
