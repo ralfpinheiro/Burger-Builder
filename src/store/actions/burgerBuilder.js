@@ -18,13 +18,14 @@ export const removeIngredient = name => {
 export const setIngredients = ingredients => {
   return {
     type: actionTypes.SET_INGREDIENTS,
-    ingredients: ingredients
+    ingredients: ingredients,
+    error: false
   };
 };
 
 export const fetchIngredientsFailed = () => {
   return {
-    type: actionTypes.SET_INGREDIENT_FAILED
+    type: actionTypes.FETCH_INGREDIENTS_FAILED
   };
 };
 
