@@ -1,5 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+An interactive application that allows user to create and order sandwiches with a seamless checkout process. The front-end components was built with ReactJs and it uses Firebase to save ingredients, orders and users information with HTTP requests.
 ## Available Scripts
 
 In the project directory, you can run:
